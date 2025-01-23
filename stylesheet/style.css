@@ -3,7 +3,7 @@
 
 
 body{
-    background-image: url(assets/bg.png);
+    background-image: url(../assets/bg.png);
 }
 
 
@@ -20,7 +20,7 @@ body{
     font-size: 35px;
     font-style: normal;
     font-weight: 700;
-    color: #070707;
+    color: #111;
 }
 .nav-header{
     margin: 0px 282px 0px 282px;
@@ -34,6 +34,23 @@ body{
     font-family: "quicksand";
     font-optical-sizing: auto;
     font-style: normal;
+}
+.nav-btn{
+    color: #fff;
+    font-family: "Quicksand";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    width: 197px;
+    padding: 10px;
+    border-radius: 12px;
+    background-color:#FEA301;
+    border: none;
+    cursor: pointer;
+}
+.nav-btn:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #FEA301;
 }
 
 /* nav section */
@@ -75,18 +92,7 @@ body{
     margin-right: 186px;
 }
 
-.nav-btn{
-    color: #fff;
-    font-family: "Quicksand";
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    width: 197px;
-    padding: 10px;
-    border-radius: 12px;
-    background-color:#FEA301;
-    border: none;
-}
+
 /* marquee section */
 
 .marquee{
@@ -141,12 +147,14 @@ body{
     font-size: 20px;
     font-weight: 700;
     font-style: normal;
+    cursor: pointer;
+}
+.banner-btn:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #111;
 }
 
-    /* background: url(assets/bg.png) lightgray 0% 0% / 100px 100px repeat, linear-gradient(0deg, rgba(254, 163, 1, 0.30) 0%, rgba(255, 255, 255, 0.30) 100%); */
-
-
-    /*  Curriculum Section  */
+/* standard curriculum section */
 
 .standard-curriculum{
     margin-top: 60px;
@@ -300,14 +308,11 @@ body{
 /* arrow button */
 
 .arrow-btn{
-
     margin-top: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
-
 
 /* story section */
 .story-cotainer{
@@ -340,7 +345,7 @@ body{
     color: #666;
     font-family: "Raleway";
     font-style: normal;
-    font-weight: ;
+    font-weight: 500;
 }
 
 .card1-date {
@@ -412,9 +417,11 @@ body{
     font-weight: 700;
 }
 
+/*  view button */
 
 .view-btn{
     margin-top: 80px;
+    margin-bottom: 60px;
     width: 197px;
     padding: 10px;
     border-radius: 12px;
@@ -425,6 +432,10 @@ body{
     font-style: normal;
     font-weight: 700;
 }
+.view-btn:hover{
+    transition: 0.2s;
+    box-shadow: 0 0 0 4px #fff, 0 0 0 8px #111;
+}
 .v-btn{
     display: flex;
     justify-content: center;
@@ -433,27 +444,27 @@ body{
 /* footer section */
 
 
-footer{
-    background: #01ACFD;
-    width: 2100px;
-    height: 560px;
-    margin-top: 60px;
-    padding: auto;
-}
 .container{
     display: flex;
-    margin: 0px 282px 0px 0px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.footer-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 282px 0px 282px;
 }
 
 .logo-section{
-    margin-top: 124px;
+
 }
 
 .ft-logo{
-    margin-right: 10px;
     color: #FFF;
     font-family: "Quicksand";
-    font-size: 42px;
+    font-size: 22px;
     font-style: normal;
     font-weight: 700;
 }
@@ -465,16 +476,73 @@ footer{
     font-style: normal;
     font-weight: 400;
 }
-.menu h3{
-    color: #FFF;
+
+/* footer styles */
+
+footer{
+    background: #01ACFD;
+    padding: 127px 282px;
+    display: flex;
+}
+.footer-logo{
+    font-family:"Quicksand";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    color: #fff;
+    display: flex;
     list-style: none;
+    align-items: center;
+}
+.footer-text{
+    font-family:"Quicksand";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    color: #fff;
+}
+
+.social{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+.footer-column-about{
+    padding-left: 172px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+    font-family:"Quicksand";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 172px;
 }
 .menu{
     list-style: none;
-    margin-top: 124px;
-}
-.menu a{
-    color: #fff;
     text-decoration: none;
+    color: #fff;
+    padding-left: 172px;
 }
-
+.footer-column-keep{
+    font-family:"Quicksand";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    padding-left: 172px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
+.footer-about{
+    font-family:"Quicksand";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    padding-left: 172px;
+    list-style: none;
+    text-decoration: none;
+    color: #fff;
+}
